@@ -25,9 +25,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:WASdev/sample.async.servlet.nio</connection>
-        <developerConnection>scm:git@github.com:WASdev/sample.async.servlet.nio</developerConnection>
-        <url>git@github.com:WASdev/sample.async.servlet.nio</url>
+        <connection>scm:git:git@github.com:WASdev/sample.async.servletnio</connection>
+        <developerConnection>scm:git@github.com:WASdev/sample.async.servletnio</developerConnection>
+        <url>git@github.com:WASdev/sample.async.servletnio</url>
     </scm>
 
     <modules>
