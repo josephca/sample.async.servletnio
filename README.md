@@ -1,4 +1,4 @@
-# Java EE7: WebSockets
+# Java EE7: Non-blocking Servlet IO
 
 Java EE7 added support for Non-blocking Servlet IO (NIO). This sample contains a few variations
 to illustrate how to use Non-blocking IO in EE7 applications.

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Servlet NIO Example Page</title>
+</head>
+<body>
+Hello...
+<form method="post" action="/servlet-nio/plainServlet">
+    Plain <input type="text" name="details" /> <br />
+</form>
+<form method="post" action="/servlet-nio/asyncServlet">
+    Async <input type="text" name="details" /> <br />
+</form>
+<form method="post" action="/servlet-nio/asyncServletRunnable">
+    Async with Runnable <input type="text" name="details" /> <br />
+</form>
+<form method="post" action="/servlet-nio/asyncServletNIO">
+    Async with NIO <input type="text" name="details" /> <br />
+</form>
+</body>
+</html>

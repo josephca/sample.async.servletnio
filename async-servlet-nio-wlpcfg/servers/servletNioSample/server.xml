@@ -1,0 +1,15 @@
+<server description="sample server for nio">
+
+    <!-- Enable features -->
+    <featureManager>
+    	<feature>servlet-3.1</feature>
+        <feature>localConnector-1.0</feature>
+    </featureManager>
+
+    <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+    <httpEndpoint httpPort="9082" httpsPort="9445" id="defaultHttpEndpoint"/>
+
+    <applicationMonitor updateTrigger="mbean"/>
+    
+    <webApplication id="async-servlet-nio-application" location="async-servlet-nio-application.war.xml" name="async-servlet-nio-application"/>
+</server>
