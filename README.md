@@ -16,17 +16,17 @@ This sample can be build using [Gradle](http://gradle.org/).
 $ gradle build publishToMavenLocal
 ```
 
-In addition to publishing the war to the local maven repository, the built war file is copied into the apps directory of the server configuration located in the async-websocket-wlpcfg directory:
+In addition to publishing the war to the local maven repository, the built war file is copied into the apps directory of the server configuration located in the async-servlet-nio-wlpcfg directory:
 
 ```text
-async-websocket-wlpcfg
+async-servlet-nio-wlpcfg
  +- servers
- +- websocketSample <-- specific server configuration
- +- server.xml <-- server configuration
- +- apps <- directory for applications
- +- async-websocket-application.war <- sample application
- +- logs <- created by running the server locally
- +- workarea <- created by running the server locally
+     +- servletNioSample                         <-- specific server configuration
+        +- server.xml                            <-- server configuration
+        +- apps                                  <-- directory for applications
+           +- async-servlet-nio-application.war  <-- sample application
+        +- logs                                  <-- created if/when you run the server locally
+        +- workarea                              <-- created if/when you run the server locally
 ```
 
 ## Building with maven
@@ -88,23 +88,23 @@ If the sample git repository hasn't been cloned yet, WDT has git tools integrate
 2.	Copy Git repo url by finding the textbox under " HTTPS clone URL" at the top of this page, and select "Copy to clipboard"
 3.	In the Git repositories view, select the hyperlink "Clone a Git repository"
 4.	The git repo url should already be filled in.  Select "Next "-> "Next" -> "Finish"
-5.	The "sample.async.websockets [master]" repo should appear in the view
+5.	The "sample.async.servletnio [master]" repo should appear in the view
 
 #### Import Gradle projects into WDT
 
 This assumes you have the Gradle IDE tools installed into Eclipse.
 
-1. In the Git Repository view, expand the websocket repo to see the "Working Directory" folder
+1. In the Git Repository view, expand the sample.async.servletnio repo to see the "Working Directory" folder
 2. Right-click on this folder, and select *Copy path to Clipboard*
 3. Select menu *File -> Import -> Gradle -> Gradle Project*
 4. In the Root folder textbox, Paste in the repository directory.
 5. Click *Build Model*
 6. Select all the projects (there should be three) and click *Finish*
-7. This will create 3 projects in Eclipse: async-websocket, async-websocket-application, and async-websocket-wlpcfg
+7. This will create 3 projects in Eclipse: sample.async-servletnio, async-servlet-nio-application, and async-servlet-nio-wlpcfg
 
 #### Import Maven projects into WDT
 
-1.	In the Git Repository view, expand the websocket repo to see the "Working Directory" folder
+1.	In the Git Repository view, expand the sample.async.servletnio repo to see the "Working Directory" folder
 2.	Right-click on this folder, and select "Copy path to Clipboard"
 3.	Select menu "File" -> "Import" -> Maven -> "Existing Maven Projects"
 4.	In the Root Directory textbox, Paste in the repository directory.
@@ -133,8 +133,8 @@ For the purposes of this sample, we will create the Liberty server (step 3 in th
         3. Select Finish, OK, Finish
     4. You should see the user directory listed under the Runtime Environment in the Runtime Explorer view.
 3. Create a Server to represent our application and maven configuration in Eclipse
-	1. From the Runtime Explorer view, *Right-click* on the async-websocket-wlpcfg user directory associated with the target runtime, and select *New Server*.
-	2. The resulting dialog should be pre-populated with the websocketSample Liberty profile server.
+	1. From the Runtime Explorer view, *Right-click* on the async-servlet-nio-wlpcfg user directory associated with the target runtime, and select *New Server*.
+	2. The resulting dialog should be pre-populated with the servletNioSample Liberty profile server.
 	3. Click Finish
 	
 #### Running application from WDT
