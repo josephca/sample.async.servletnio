@@ -100,7 +100,7 @@ This assumes you have the Gradle IDE tools installed into Eclipse.
 4. In the Root folder textbox, Paste in the repository directory.
 5. Click *Build Model*
 6. Select all the projects (there should be three) and click *Finish*
-7. This will create 3 projects in Eclipse: sample.async-servletnio, async-servlet-nio-application, and async-servlet-nio-wlpcfg
+7. This will create 3 projects in Eclipse: sample.async.servletnio, async-servlet-nio-application, and async-servlet-nio-wlpcfg
 
 #### Import Maven projects into WDT
 
