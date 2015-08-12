@@ -28,7 +28,7 @@ public class AsyncServletNIO extends HttpServlet {
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        
+
         response.setContentType("text/html");
 
         // start async
@@ -60,8 +60,10 @@ public class AsyncServletNIO extends HttpServlet {
 
         final ServletInputStream is = request.getInputStream();
         final ServletOutputStream os = response.getOutputStream();
-        
+
         // Start NIO Mode!! Can not use regular servlet input stream read/write after this
+        // Follow the code flow from AsyncReadListener (to read request) to
+        // AsyncWriteListener (to write response)
         is.setReadListener(new AsyncReadListener(ac, is, os));
     }
 
