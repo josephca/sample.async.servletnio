@@ -21,8 +21,8 @@ Once the server has been started, go to [http://localhost:9083/servlet-nio/](htt
 
 ## More on Servlet NIO
 * [JSR 340: Java Servlet 3.1](https://jcp.org/en/jsr/detail?id=340)
-** Section 2.3.3.3 - Asynchronous processing
-** Section 5.3 - Non-blocking IO
+    * Section 2.3.3.3 - Asynchronous processing
+    * Section 5.3 - Non-blocking IO
 
 ## Notice
 
