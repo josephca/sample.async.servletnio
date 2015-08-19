@@ -4,10 +4,10 @@ Java EE7 added support for Non-blocking Servlet IO (NIO) in Servlet 3.1, which e
 
 This sample contains a few variations to illustrate how Non-blocking IO in Servlet 3.1 works:
 
-* PlainServlet: a plain/synchronous servlet
-* AsyncServlet: an asynchronous servlet in the style of Servlet 3.0
-* AsyncServletRunnable: an asynchronous servlet that uses a runnable to offload work to a different thread
-* AsyncServletNIO: a servlet that uses an AsyncReadListener for clients that are slow to write data, and an AsyncReadListener for clients that are slow to read data.
+* *Plain*: [PlainServlet](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/PlainServlet.java) is just a plain/synchronous servlet
+* *Async*: [AsyncServlet](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/AsyncServlet.java) defines an asynchronous servlet using attribuets defined in the Servlet 3.0 specification.
+* *Async with Runnable*: [AsyncServletRunnable](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/AsyncServletRunnable.java) is an asynchronous servlet that uses a runnable to offload work to a different thread.
+* *Async with NIO*: [AsyncServletNIO](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/AsyncServletNIO.java) is a servlet that uses an [AsyncReadListener](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/AsyncReadListener.java) for clients that are slow to write data, and an [AsyncWriteListener](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/AsyncWriteListener.java) for clients that are slow to read data.
 
 Browse the code to see what it does, or build and run it yourself:
 
