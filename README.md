@@ -9,13 +9,13 @@ This sample contains a few variations to illustrate how Non-blocking IO in Servl
 * *Async with Runnable*: [AsyncServletRunnable](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/AsyncServletRunnable.java) is an asynchronous servlet that uses a runnable to offload work to a different thread.
 * *Async with NIO*: [AsyncServletNIO](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/AsyncServletNIO.java) is a servlet that uses an [AsyncReadListener](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/AsyncReadListener.java) for clients that are slow to write data, and an [AsyncWriteListener](/async-servlet-nio-application/src/main/java/net/wasdev/servlet/nio/AsyncWriteListener.java) for clients that are slow to read data.
 
+## Getting Started:
+
 Browse the code to see what it does, or build and run it yourself:
 
-* [Building with Gradle](/docs/Building-the-sample.md#building-with-gradle)
-* [Building with maven](/docs/Building-the-sample.md#building-with-maven)
+* [Building and running on the command line](/docs/Using-cmd-line.md)
+* [Building and running using Eclipse and WebSphere Development Tools (WDT)](/docs/Using-WDT.md)
 * [Downloading WAS Liberty](/docs/Downloading-WAS-Liberty.md)
-* [Start the server using the command line, or maven/gradle plugins](/docs/Starting-the-server.md)
-* [Using Eclipse and WebSphere Development Tools (WDT)](/docs/Using-WDT.md)
 
 Once the server has been started, go to [http://localhost:9083/servlet-nio/](http://localhost:9083/servlet-nio/) to interact with the sample.
 
