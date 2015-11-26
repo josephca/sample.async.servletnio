@@ -11,5 +11,5 @@
 
     <applicationMonitor updateTrigger="mbean"/>
 
-    <webApplication id="async-servlet-nio-application" location="async-servlet-nio-application.war.xml" name="async-servlet-nio-application"/>
+    <webApplication id="async-servlet-nio-application" location="async-servlet-nio-application.war" name="async-servlet-nio-application"/>
 </server>

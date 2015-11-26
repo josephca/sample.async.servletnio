@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive>
-    <dir sourceOnDisk="${project.build.directory}/m2e-wtp/web-resources" targetInArchive="/"/>
-    <dir sourceOnDisk="${basedir}/src/main/webapp" targetInArchive="/"/>
-    <dir sourceOnDisk="${project.build.directory}/classes" targetInArchive="/WEB-INF/classes"/>
-</archive>
