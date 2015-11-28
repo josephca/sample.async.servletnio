@@ -96,7 +96,7 @@ String getHttpPort() {
 }
 
 liberty {
-    wlpDir = owner.hasProperty('libertyRoot') ? "${libertyRoot}" : null
+    installDir = owner.hasProperty('libertyRoot') ? "${libertyRoot}" : null
     serverName = 'servletNioSample'
     userDir = '../async-servlet-nio-wlpcfg'
     clean = true
