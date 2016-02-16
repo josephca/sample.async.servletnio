@@ -1,4 +1,4 @@
-package net.wasdev.servlet.nio.fvt.test;
+package net.wasdev.servlet.nio.it.test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -50,6 +50,7 @@ public class ServletTest {
         String port = System.getProperty("liberty.test.port");
         String url = "http://localhost:" + port + "/servlet-nio/" + servlet;
         System.out.println("Testing " + url);
+        
         Form form = new Form();
         form.param("details", "abc");
         Invocation.Builder requestBuilder = client.target(url).request();

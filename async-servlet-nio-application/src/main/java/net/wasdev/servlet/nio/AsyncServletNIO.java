@@ -1,17 +1,13 @@
 package net.wasdev.servlet.nio;
 
 import java.io.IOException;
-import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 import javax.servlet.AsyncContext;
 import javax.servlet.AsyncEvent;
 import javax.servlet.AsyncListener;
-import javax.servlet.ReadListener;
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
 import javax.servlet.ServletOutputStream;
-import javax.servlet.WriteListener;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -39,7 +35,6 @@ public class AsyncServletNIO extends HttpServlet {
             @Override
             public void onComplete(AsyncEvent event) throws IOException {
                 System.out.println("AsyncServletNIO onComplete() called");
-
             }
 
             @Override
