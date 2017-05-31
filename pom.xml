@@ -158,6 +158,20 @@
                             <goal>package-server</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>start-server</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>test-start-server</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>stop-server</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>test-stop-server</goal>
+                        </goals>
+                    </execution>
                 </executions>
             </plugin>
             <!-- Plugin to run functional tests -->
@@ -173,7 +187,6 @@
                             <goal>integration-test</goal>
                         </goals>
                         <configuration>
-                            <skipITs>true</skipITs>
                             <systemPropertyVariables>
                                 <liberty.test.port>${testServerHttpPort}</liberty.test.port>
                             </systemPropertyVariables>
