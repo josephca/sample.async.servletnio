@@ -96,3 +96,7 @@ Use the following steps to run the application with Maven:
 #### Tips
 
 * When importing the existing maven project into Eclipse, Eclipse will (by default) "helpfully" add this project to an (extraneous) ear. To turn this off, go to Preferences -> Java EE -> Project, and uncheck "Add project to an EAR" before you import the project. If you forgot to do this, just delete the ear project; no harm.
+
+
+[Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
+
