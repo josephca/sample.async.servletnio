@@ -114,7 +114,7 @@
                     <configFile>src/main/liberty/config/server.xml</configFile>
                     <include>${packaging.type}</include>
                     <installAppPackages>project</installAppPackages>
-                    <looseApplication>false</looseApplication>
+                    <looseApplication>true</looseApplication>
                     <bootstrapProperties>
                         <appContext>${project.build.finalName}</appContext>
                         <appLocation>${project.build.finalName}.war</appLocation>
