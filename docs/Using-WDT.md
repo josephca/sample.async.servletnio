@@ -27,33 +27,7 @@ If the sample git repository hasn't been cloned yet, WDT has git tools integrate
 ### Building the sample in Eclipse
 :pushpin: [Switch to cmd line example](/docs/Using-cmd-line.md/#building-the-sample)
 
-This sample can be built using either [Gradle](#building-with-gradle) or [Maven](#building-with-maven).
-
-#### Building with [Gradle](http://gradle.org/)
-
-###### Import Gradle projects into WDT
-
-This assumes you have the Gradle [Buildship](https://projects.eclipse.org/projects/tools.buildship) tools installed into Eclipse Mars.
-
-1. In the Git Repository view, expand the servlet NIO repo to see the "Working Directory" folder
-2. Right-click on this folder, and select *Copy path to Clipboard*
-3. Select menu *File -> Import -> Gradle -> Gradle Project*
-4. In the *Project root directory* folder textbox, Paste in the repository directory.
-5. Click *Next* twice
-6. Three projects should be listed in the *Gradle project structure* click *Finish*
-7. This will create a project in Eclipse: sample.async.servletnio
-8. Go to the *Gradle Tasks* view in Eclipse and navigate to the *sample.async.servletnio* project
-9. Double click on the *eclipse* task to generate all the Eclipse files
-10. In the *Enterprise Explorer* view in Eclipse right click on the three projects mentioned in step 7 and click refresh
-
-:star: *Note:* If you did not use Eclipse/WDT to clone the git repository, follow from step 3, but navigate to the cloned repository directory rather than pasting its name in step 4.
-
-###### Run Gradle build
-
-1. Right-click on async-servlet-nio/build.gradle
-2. *Run As > Gradle Build...*
-3. In the *Gradle Tasks* section enter "build"
-4. Click *Run*
+This sample can be built using [Maven](#building-with-maven).
 
 #### Building with [Maven](http://maven.apache.org/)
 
@@ -72,7 +46,7 @@ This assumes you have the Gradle [Buildship](https://projects.eclipse.org/projec
 
 1. Right-click the project and select **Run As > Maven Clean**.
 2. Right-click the project and select **Run As > Maven Install**.
-3. Right-click the project and select **Run As > Maven build...** then add 'liberty:run-server' in Goals.
+3. Right-click the project and select **Run As > Run on Server**.
 4. You should see the following message in the console: `Application async-servlet-nio started in XX.XX seconds.`
 
 ## Running with Maven
@@ -92,11 +66,6 @@ Use the following steps to run the application with Maven:
     ```
 
 3. Confirm web browser opens on "http://localhost:9082/servletnio/" with 5 hyperlinks to run samples
-
-#### Tips
-
-* When importing the existing maven project into Eclipse, Eclipse will (by default) "helpfully" add this project to an (extraneous) ear. To turn this off, go to Preferences -> Java EE -> Project, and uncheck "Add project to an EAR" before you import the project. If you forgot to do this, just delete the ear project; no harm.
-
 
 [Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
 
