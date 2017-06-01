@@ -25,12 +25,6 @@ Use the following steps to run the application with Maven:
     $ mvn clean install
     ```
     
-    If you want to also run the functional tests then you need to [Download WAS Liberty](/docs/Downloading-WAS-Liberty.md) and pass in the location of your install as the system property libertyRoot:
-
-    ```bash
-    $ mvn -DlibertyRoot=<LibertyInstallLocation> install
-    ```
-
 2. To run the server with the Servlet sample execute:
     ```bash
     $ mvn liberty:run-server or,
