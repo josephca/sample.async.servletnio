@@ -12,56 +12,28 @@ $ git clone https://github.com/WASdev/sample.async.servletnio.git
 ### Building the sample
 :pushpin: [Switch to Eclipse example](/docs/Using-WDT.md/#building-the-sample-in-eclipse)
 
-This sample can be built using either [Gradle](#gradle-commands) or [Maven](#apache-maven-commands).
+This sample can be built using [Maven](#apache-maven-commands).
 
-## [Gradle](http://gradle.org/) commands
+## Running with Maven
 
-```bash
-$ gradle build publishToMavenLocal
-```
+This project can be built with [Apache Maven](http://maven.apache.org/). The project uses [Liberty Maven Plug-in][] to automatically download and install Liberty with Java EE7 Full Platform runtime from the Maven Central. Liberty Maven Plug-in is also used to create, configure, and run the application on the Liberty server. 
 
-If you want to also run the functional tests then you need to [Download WAS Liberty](/docs/Downloading-WAS-Liberty.md) and set the libertyRoot property in the gradle.properties file to point to your Liberty install.
+Use the following steps to run the application with Maven:
 
-## [Apache Maven](http://maven.apache.org/) commands
+1. Execute full Maven build. This will cause Liberty Maven Plug-in to download and install Liberty profile server.
+    ```bash
+    $ mvn clean install
+    ```
+    
+2. To run the server with the Servlet sample execute:
+    ```bash
+    $ mvn liberty:run-server or,
+    $ mvn liberty:start-server
+    ```
 
-```bash
-$ mvn install
-```
+* `run-server` runs the server in the foreground.
+* `start-server` runs the server in the background. 
 
-If you want to also run the functional tests then you need to [Download WAS Liberty](/docs/Downloading-WAS-Liberty.md) and pass in the location of your install as the system property libertyRoot:
+3. Confirm web browser opens on "http://localhost:9083/servlet-nio/" to run samples
 
-```bash
-$ mvn -DlibertyRoot=<LibertyInstallLocation> install
-```
-
-In addition to publishing the war to the local maven repository, the built war file is copied into the apps directory of the server configuration located in the async-servletnio-wlpcfg directory:
-
-```text
-async-servlet-nio-wlpcfg
- +- servers
-     +- servletNioSample                         <-- specific server configuration
-        +- server.xml                            <-- server configuration
-        +- apps                                  <- directory for applications
-           +- async-servlet-nio-application.war  <- sample application
-        +- logs                                  <- created by running the server locally
-        +- workarea                              <- created by running the server locally
-```
-
-### Running the application locally
-:pushpin: [Switch to Eclipse example](/docs/Using-WDT.md/#running-the-application-locally)
-
-Pre-requisite: [Download WAS Liberty](/docs/Downloading-WAS-Liberty.md)
-
-Use the following to start the server and run the application:
-
-```bash
-$ export WLP_USER_DIR=/path/to/sample.async.servletnio/async-servlet-nio-wlpcfg
-$ /path/to/wlp/bin/server run servletNioSample
-```
-
-* `run` runs the server in the foreground.
-* `start` runs the server in the background. Look in the logs directory for console.log to see what's going on, e.g.
-
-```bash
-$ tail -f ${WLP_USER_DIR}/servers/servletNioSample/logs/console.log
-```
+[Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
