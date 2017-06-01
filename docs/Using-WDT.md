@@ -49,23 +49,5 @@ This sample can be built using [Maven](#building-with-maven).
 3. Right-click the project and select **Run As > Run on Server**.
 4. You should see the following message in the console: `Application async-servlet-nio started in XX.XX seconds.`
 
-## Running with Maven
-
-This project can be built with [Apache Maven](http://maven.apache.org/). The project uses [Liberty Maven Plug-in][] to automatically download and install Liberty with Java EE7 Full Platform runtime from the Maven Central. Liberty Maven Plug-in is also used to create, configure, and run the application on the Liberty server. 
-
-Use the following steps to run the application with Maven:
-
-1. Execute full Maven build. This will cause Liberty Maven Plug-in to download and install Liberty profile server.
-    ```bash
-    $ mvn clean install
-    ```
-
-2. To run the server with the Servlet sample execute:
-    ```bash
-    $ mvn liberty:run-server
-    ```
-
-3. Confirm web browser opens on "http://localhost:9082/servletnio/" with 5 hyperlinks to run samples
-
 [Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
 
