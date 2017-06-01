@@ -45,3 +45,5 @@ $ mvn -DlibertyRoot=<LibertyInstallLocation> install
 :pushpin: [Switch to Eclipse example](/docs/Using-WDT.md/#running-the-application-locally)
 
 Pre-requisite: [Download WAS Liberty](/docs/Downloading-WAS-Liberty.md)
+
+[Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
