@@ -41,9 +41,5 @@ If you want to also run the functional tests then you need to [Download WAS Libe
 ```bash
 $ mvn -DlibertyRoot=<LibertyInstallLocation> install
 ```
-### Running the application locally
-:pushpin: [Switch to Eclipse example](/docs/Using-WDT.md/#running-the-application-locally)
-
-Pre-requisite: [Download WAS Liberty](/docs/Downloading-WAS-Liberty.md)
 
 [Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
