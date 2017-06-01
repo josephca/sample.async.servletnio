@@ -48,7 +48,7 @@ This sample can be built using [Maven](#building-with-maven).
 2. Right-click the project and select **Run As > Maven Install**.
 3. Right-click the project and select **Run As > Run on Server**.
 4. You should see the following message in the console: `Application async-servlet-nio started in XX.XX seconds.`
-5. Confirm web browser opens on "http://localhost:9082/servletnio/" with 5 hyperlinks to run samples
+5. Confirm web browser opens on "http://localhost:9083/servlet-nio/" to run samples
 
 
 

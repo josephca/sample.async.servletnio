@@ -34,7 +34,7 @@ Use the following steps to run the application with Maven:
 * `run-server` runs the server in the foreground.
 * `start-server` runs the server in the background. 
 
-3. Confirm web browser opens on "http://localhost:9082/servletnio/" with 5 hyperlinks to run samples
+3. Confirm web browser opens on "http://localhost:9083/servlet-nio/" to run samples
 
 If you want to also run the functional tests then you need to [Download WAS Liberty](/docs/Downloading-WAS-Liberty.md) and pass in the location of your install as the system property libertyRoot:
 
