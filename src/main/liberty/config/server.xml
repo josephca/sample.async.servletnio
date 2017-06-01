@@ -7,9 +7,7 @@
     </featureManager>
 
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
-    <!-- <httpEndpoint httpPort="9083" httpsPort="9445" id="defaultHttpEndpoint"/>
-     -->
-     <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
+    <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
         id="defaultHttpEndpoint"/>
 
     <applicationMonitor updateTrigger="mbean"/>
