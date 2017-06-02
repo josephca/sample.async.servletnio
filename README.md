@@ -15,7 +15,6 @@ Browse the code to see what it does, or build and run it yourself:
 
 * [Building and running on the command line](/docs/Using-cmd-line.md)
 * [Building and running using Eclipse and WebSphere Development Tools (WDT)](/docs/Using-WDT.md)
-* [Downloading WAS Liberty](/docs/Downloading-WAS-Liberty.md)
 
 Once the server has been started, go to [http://localhost:9083/servlet-nio/](http://localhost:9083/servlet-nio/) to interact with the sample.
 
