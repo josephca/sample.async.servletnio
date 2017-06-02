@@ -44,11 +44,9 @@ This sample can be built using [Maven](#building-with-maven).
 
 ###### Running in Eclipse with Maven
 
-1. Right-click the project and select **Run As > Maven Clean**.
-2. Right-click the project and select **Run As > Maven Install**.
-3. Right-click the project and select **Run As > Run on Server**.
-4. You should see the following message in the console: `Application async-servlet-nio started in XX.XX seconds.`
-5. Confirm web browser opens on "http://localhost:9083/servlet-nio/" to run samples
+1. Right-click the project and select **Run As > Run on Server**.
+2. You should see the following message in the console: `Application async-servlet-nio started in XX.XX seconds.`
+3. Confirm web browser opens on "http://localhost:9083/servlet-nio/" to run samples
 
 
 
