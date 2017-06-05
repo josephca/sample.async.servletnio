@@ -25,7 +25,7 @@ Once the server has been started, go to [http://localhost:9083/servlet-nio/](htt
 
 ## Notice
 
-© Copyright IBM Corporation 2015.
+© Copyright IBM Corporation 2015, 2017.
 
 ## License
 
